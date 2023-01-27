@@ -1,5 +1,5 @@
 /* cyrillic-ext */
-[data-wfx-id="tasker-close"]+div {
-  display: none;
+[id="_wfx_sh_nudge_"]>[class*="Label"]:not([style]){
+    color:white !important;
 }
 /* cyrillic */
