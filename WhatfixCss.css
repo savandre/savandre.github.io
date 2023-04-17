@@ -1,5 +1,5 @@
 /* cyrillic-ext */
-[id="_wfx_sh_nudge_"]>[class*="Label"]:not([style]){
-    color:white !important;
+[id="_wfx_sh_widget_"] [data-wfx-id*="expandable-content"]{
+    font-weight: bold !important;
 }
 /* cyrillic */
