@@ -1,5 +1,5 @@
 /* cyrillic-ext */
-[id="_wfx_sh_widget_"] [data-wfx-id*="expandable-content"]{
+[id="_wfx_sh_widget_"] [data-wfx-id="widget-all-contents"] [aria-label*="Welcome to Voyager Health!"]{
     font-weight: bold !important;
 }
 /* cyrillic */
