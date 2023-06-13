@@ -1,15 +1,11 @@
 /* cyrillic-ext */
-@keyframes blinking {
-        0% {
-          background-color: #06c3d1;
-          
-        }
-        100% {
-          background-color: #270da6;
-          
-        }
-      }
-      #wfx-flow-tip {
-        animation: blinking 4s infinite;
-      }
+#wfx-flow-tip {
+  animation: blinker 4s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 /* cyrillic */
