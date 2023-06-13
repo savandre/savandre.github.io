@@ -1,16 +1,10 @@
 /* cyrillic-ext */
 #wfx-flow-tip {
-  animation: blinker 1s linear infinite;
+  animation: blinker 1.5s linear infinite;
 }
 
 @keyframes blinker {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  100% {
+  50% {
     opacity: 0;
   }
 }
