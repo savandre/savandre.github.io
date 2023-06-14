@@ -1,6 +1,6 @@
 /* cyrillic-ext */
 #wfx-flow-tip {
-  animation: blinker 4s ease-in infinite;
+  animation: blinker 4s ease-out infinite;
 }
 
 @keyframes blinker {
