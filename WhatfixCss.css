@@ -4,8 +4,12 @@
 }
 
 @keyframes blinker {
-  70% {
+  40% {
     opacity: 0;
   }
+  80%{
+    opacity: 1;
+  }
+  
 }
 /* cyrillic */
