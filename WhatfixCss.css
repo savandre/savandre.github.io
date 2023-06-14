@@ -4,10 +4,13 @@
 }
 
 @keyframes blinker {
-  37.5% {
+  15%{
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
   }
-  75%{
+  85%{
     opacity: 1;
   }
   100%{
