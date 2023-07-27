@@ -1,21 +1,7 @@
 /* cyrillic-ext */
-#wfx-flow-tip {
-  animation: blinker 3.5s ease-in infinite;
+#_wfx_sh_widget_ {
+  color: red !important;
 }
 
-@keyframes blinker {
-  15%{
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  85%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 1;
-  }
-  
-}
+
 /* cyrillic */
