@@ -1,9 +1,7 @@
 /* cyrillic-ext */
-[id="_wfx_sh_widget_"] [id="_wfx_sh_chat"] svg{
-
-  width: 20px;
-  height: 20px;
-}
-
+#wfx-launcher-button > p > span > strong{
+  font-family: "SLBSans-medium";
+  src: url('https://videos.whatfix.com/ee7ffb40-a810-11eb-a29d-bacbbe07b880/SLBSans-Medium.otf') format('opentype');
+}  
 
 /* cyrillic */
