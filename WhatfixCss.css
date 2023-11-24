@@ -1,39 +1,6 @@
-@charset "ISO-8859-1";
+/* cyrillic-ext */
+[id="_wfx_sh_widget_"] [id="_wfx_sh_chat"] svg{
 
-@font-face {
-  font-family: 'HEINEKENCore-Bold';
-  font-style: normal;  
-  font-display: swap;
-  unicode-range: U+000-5FF; /* Download only latin glyphs */  
-  src: local('HEINEKENCore-Bold'),
-    url('https://acc-www.heishop.mx/hintetradeb2bstorefront/_ui/responsive/theme-lambda-hmx/fonts/HEINEKEN%20Core-Bold.woff2') format('woff2'),
-    url('https://acc-www.heishop.mx/hintetradeb2bstorefront/_ui/responsive/theme-lambda-hmx/fonts/HEINEKEN%20Core-Bold.woff') format('woff')
-} 
-@font-face {
- font-family: 'HEINEKENCore-ExtraBold';
- font-style: normal;  
- font-display: swap;
- unicode-range: U+000-5FF; /* Download only latin glyphs */  
- src: local('HEINEKENCore-ExtraBold'),
-	url('https://acc-www.heishop.mx/hintetradeb2bstorefront/_ui/responsive/theme-lambda-hmx/fonts/HEINEKENCore-ExtraBold.woff2') format('woff2'),
-	url('https://acc-www.heishop.mx/hintetradeb2bstorefront/_ui/responsive/theme-lambda-hmx/fonts/HEINEKENCore-ExtraBold.woff') format('woff')
+  width: 20px;
+  height: 20px;
 }
-@font-face {
- font-family: 'HEINEKENCore-Light';
- font-style: normal;  
- font-display: swap;
- unicode-range: U+000-5FF; /* Download only latin glyphs */  
- src: local('HEINEKENCore-Light'),
-	url('https://acc-www.heishop.mx/hintetradeb2bstorefront/_ui/responsive/theme-lambda-hmx/fonts/HEINEKENCore-Light.woff2') format('woff2'),
-	url('https://acc-www.heishop.mx/hintetradeb2bstorefront/_ui/responsive/theme-lambda-hmx/fonts/HEINEKENCore-Light.woff') format('woff')
-}
-@font-face {
-  font-family: 'HEINEKENCore';
- font-style: normal;  
- font-display: swap;
-  unicode-range: U+000-5FF; /* Download only latin glyphs */  
-  src: local('HEINEKENCore'),
-    url('https://acc-www.heishop.mx/hintetradeb2bstorefront/_ui/responsive/theme-lambda-hmx/fonts/HEINEKEN%20Core.woff2') format('woff2'),
-    url('https://acc-www.heishop.mx/hintetradeb2bstorefront/_ui/responsive/theme-lambda-hmx/fonts/HEINEKEN%20Core.woff') format('woff')
-} 
- 
