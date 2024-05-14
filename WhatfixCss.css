@@ -7,7 +7,7 @@
   font-weight: 600;
 }
 
-[id="wfx-smartinfo"] [svg]{
+[id="wfx-smartinfo"] svg{
  color:red;
  animation: loading 3s linear infinite;
 }
