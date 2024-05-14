@@ -8,7 +8,7 @@
 }
 
 [id="wfx-smartinfo"] [svg]{
-
+ color:red;
  animation: loading 3s linear infinite;
 }
 
