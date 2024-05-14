@@ -7,7 +7,7 @@
   font-weight: 600;
 }
 
-#wfx-smartinfo{
+[id="wfx-smartinfo"]{
  animation: loading 3s linear infinite;
 }
 
