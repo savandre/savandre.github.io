@@ -8,6 +8,7 @@
 }
 
 [id="wfx-smartinfo"]{
+top: 260 !important;
  animation: loading 3s linear infinite;
 }
 
