@@ -1,6 +1,20 @@
+[id="_wfx_sh_nudge_"]>[class*="Label"]:not([style]) {
+  color: white !important;
+}
+[id="wfx-beacon"]
+  [aria-label="?, Set the Transaction Price to $1 or up to the approved WWOA amount (0-100%) based on the total revenue anticipated at project completion with consideration to the risk associated."]
+  > div {
+  font-weight: 600;
+}
 
-[id="_wfx_sh_widget_"] [id="_wfx_sh_chat"] svg{
-
-  width: 20px;
-  height: 20px;
+#wfx-smartinfo{
+ animation: loading 3s linear infinite;
+ @keyframes loading {
+  0% { 
+    transform: rotate(0); 
+  }
+  100% { 
+    transform: rotate(360deg);
+  }
+ }
 }
