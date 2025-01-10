@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Fields and API Trigger</title>
+    <style>
+        body {
+            background-color: #ADD8E6;
+            /* Light blue color */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .dropdown-container {
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dropdown Fields and API Trigger</h1>
+    <div class="dropdown-container">
+        <label for="summary">Summary:</label>
+        <select id="summary">
+            <option value="Subject">Subject</option>
+            <option value="Description">Description</option>
+            <option value="Priority">Priority</option>
+        </select>
+    </div>
+    <div class="dropdown-container">
+        <label for="description">Description:</label>
+        <select id="description">
+            <option value="Subject">Subject</option>
+            <option value="Description">Description</option>
+            <option value="Priority">Priority</option>
+        </select>
+    </div>
+    <div class="dropdown-container">
+        <label for="priority">Priority:</label>
+        <select id="priority">
+            <option value="Subject">Subject</option>
+            <option value="Description">Description</option>
+            <option value="Priority">Priority</option>
+        </select>
+    </div>
+    <button onclick="triggerApi()">Submit</button>
+
+    <script>
+        function triggerApi() {
+            const summary = document.getElementById('summary').value;
+            const description = document.getElementById('description').value;
+            const priority = document.getElementById('priority').value;
+
+            const myHeaders = new Headers();
+            myHeaders.append("Authorization", "Bearer wrkaus-eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNjU3ZDI5Yy1lZTBjLTQ5NzEtYWE3OC1mZjRmMTdlNDIwYjMiLCJqdGkiOiI5YzlmMzU0Mi1iOTBlLTRlZTQtYmY3Yi0wNTk0MTE3YWMyYjUifQ.lAjfFfX_C9NwHy8R4Dy41xwrP6N2w7Rs6s9XRPq0j29HDZy16kdSqY4GpPUGOzygQKbrTwG-_G3XJUMMGI97Sbj5qBzuYU29ONxqWwfCpy4D3h5_Ut4jST2BkZRLsG1-RMSytQ9TLFJcDdRgImSeVtophX_3vZIOg90xBXoL5YpS5mEZuO2Bx4j2HbetNbiHv95DRjgXtosTfCZngsjfDMw1V1s3DCKmBJ3r_va6T_-pAy-c-HGmgtpVRVzDsRbAY4XAkxOHgnOtdxUE55AUzKVzJs3FfCZteMXfr60rnCLSVQaLy2Yx-kxd49W77j7yjAfy73HjOZdNPq6VsLiJL_oqV7zgHyoPygOZFNIzmpl7en0ayAFJBVv_QcaAJubWBlM7DCRCAhz9CfppA2jkKl0rMau0GZxv_6me1c92D_G_KznQK9b3fsPtBTQIOaxjymCzlzvYRw4GyQqUPi5viyguqcR0oGAkPBbB0meeInQLVgOV8bl8KoiZPgmAbVYCKRj2zJqnAOZb6FW4XsfogjkBGZxMTdYWWkHmMAN2mLq42Dj6EeKgHA0ynmDDaidPlu1XIuHJ8dQDNbpqNmYfEMkZ4z0aSCxZiOu2HJbODSZAket6hHZG5apfVz4Od_OVqybArUO5N2JvC_7pGxqUJ5U9KCC2GONQgflQ-wGGVV8");
+            myHeaders.append("content-type", "application/json");
+            myHeaders.append("Accept", "*/*");
+
+            const raw = JSON.stringify({
+                "field_map_schema": [
+                    {
+                        "type": "map",
+                        "source_provider": "salesforce",
+                        "source_line": "c8c9255e",
+                        "source_path": [
+                            "Task",
+                           summary
+                        ],
+                        "target_path": [
+                            "summary"
+                        ]
+                    },
+                    {
+                        "type": "map",
+                        "source_provider": "salesforce",
+                        "source_line": "c8c9255e",
+                        "source_path": [
+                            "Task",
+                            description
+                        ],
+                        "target_path": [
+                            "description"
+                        ]
+                    },
+                    {
+                        "type": "map",
+                        "source_provider": "salesforce",
+                        "source_line": "c8c9255e",
+                        "source_path": [
+                            "Task",
+                           priority
+                        ],
+                        "target_path": [
+                            "priority"
+                        ]
+                    }
+                ]
+            });
+
+            const requestOptions = {
+                method: "PUT",
+                headers: myHeaders,
+                body: raw,
+                redirect: "follow"
+            };
+
+            fetch("https://www.workato.com/api/v2/recipes/57842174/field_map_introspections/dm-AQJhkHB4-rTmpPM", requestOptions)
+                .then((response) => response.text())
+                .then((result) => console.log(result))
+                .catch((error) => console.error(error));
+        }
+    </script>
+</body>
+
+</html>
